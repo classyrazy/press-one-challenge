@@ -1,6 +1,6 @@
 <template>
-  <nav class="nav-container">
-    <div class="nav-wrapper">
+  <header class="nav-container">
+    <nav class="nav-wrapper">
       <img src="../assets/logo.png" alt="page logo" />
       <ul class="nav-links">
         <li><a href="#">About Us</a></li>
@@ -9,8 +9,8 @@
         <li><a href="#">Support</a></li>
       </ul>
       <a href="#" class="btn bordered-btn">Get PressOne</a>
-    </div>
-  </nav>
+    </nav>
+  </header>
 </template>
 
 <script setup lang="ts"></script>

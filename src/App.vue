@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import FooterSection from './components/FooterSection.vue'
+import Plans from './components/Plans.vue'
 import WhatYouGetSection from './components/WhatYouGetSection.vue'
 import BenefitsSection from './components/BenefitsSection.vue'
 import Hero from './components/Hero.vue'
@@ -11,6 +13,8 @@ import NavBar from './components/NavBar.vue'
 <Hero />
 <BenefitsSection />
 <WhatYouGetSection />
+<Plans />
+<FooterSection/>
 </div>
 </template>
 
