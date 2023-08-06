@@ -1,7 +1,7 @@
 <template>
   <header class="nav-container" :class="navOpened? 'open-nav': ''">
     <nav class="nav-wrapper">
-      <img src="../assets/logo.png" alt="page logo" />
+      <img src="/logo.png" alt="page logo" />
       <ul class="nav-links">
         <li><a href="#">About Us</a></li>
         <li><a href="#">Pricing</a></li>

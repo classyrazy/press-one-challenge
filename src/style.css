@@ -328,6 +328,12 @@ section.benefit-section .inner {
   font-weight: 500;
   color: var(--text-sub-heading);
 }
+@media (max-width: 414px) {
+  .each-benefit {
+  width: 90%;
+  margin: 0 auto;
+}
+}
 
 /* what you get section */
 
@@ -377,10 +383,10 @@ section.what-you-get {
   gap: 4rem;
 }
 .what-you-get .inner .card-container .bg-inner.sales {
-  background-image: url('./assets/images/bg-element-card-1.png');
+  background-image: url('/images/bg-element-card-1.png');
 }
 .what-you-get .inner .card-container .bg-inner.customer {
-  background-image: url('./assets/images/bg-element-card-2.png');
+  background-image: url('/images/bg-element-card-2.png');
 }
 .what-you-get .inner .card-container .card-wrapper {
   border-radius: 20px;
@@ -474,7 +480,8 @@ section.what-you-get {
     grid-template-columns: repeat(1, 1fr);
   }
   section.what-you-get .inner .card-container .card-wrapper {
-    max-width: 100%;
+    max-width: 90%;
+    margin-inline: auto;
   }
   section.what-you-get .inner .card-container .card-details {
     margin-top: 0;
@@ -487,6 +494,11 @@ section.what-you-get {
   }
   .what-you-get img.bg-element-2 {
     display: none;
+  }
+}
+@media (max-width: 414px) {
+  .what-you-get .icon-wrapper{
+    top: 200px;
   }
 }
 

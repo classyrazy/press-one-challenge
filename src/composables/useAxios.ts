@@ -5,9 +5,9 @@ const useAxios = () => {
         baseURL: BASE_URL,
       headers: {
         'Access-Control-Allow-Origin': '*',
-        'Content-Type': 'application/json',
+        "Content-Type": 'application/json',
+        "Accept": 'application/json',
       },
-      withCredentials: true
     })
 
     return axiosInstance

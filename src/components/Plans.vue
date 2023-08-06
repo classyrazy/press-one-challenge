@@ -3,7 +3,7 @@
         <div class="inner">
             <h2>Choose a plan that works for you</h2>
             <div class="logo-plans-wrapper">
-                <img src="../assets/images/plan-logo.svg" alt="Press one africa logo" class="">
+                <img src="/images/plan-logo.svg" alt="Press one africa logo" class="">
                 <div class="plans-wrapper">
                     <div class="plan-wrapper" v-for="item in plans" :key="item.id">
                         <div class="details">
@@ -73,7 +73,7 @@ const plans = ref<{
 const handleFetchPlans = async () => {
     try {
         const req = useAxios().get("/swQ1ic")
-        const res = await req
+        const res :any = await req
         if (res.data) {
             plans.value = res.data
         }

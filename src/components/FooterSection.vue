@@ -5,7 +5,7 @@
             <div class="main-footer-inner">
                 <div class="inner">
                     <div class="left-part">
-                        <img src="../assets/logo.png" alt="page logo" />
+                        <img src="/logo.png" alt="page logo" />
                         <a href="mailto:hello@pressone.africa">hello@pressone.africa</a>
                         <a href="tel:+23413438962">+234 1 343 8962</a>
                         <ul class="icons">
