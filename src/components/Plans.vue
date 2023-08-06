@@ -66,7 +66,8 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
-import useAxios from '../composables/useAxios';
+// API was not working
+// import useAxios from '../composables/useAxios';
 const plans = ref<{
     id: number, name: string, amount: string, description: string, cta: string, call_reception: string, calls_per_week: string, agent: string
 }[]>([
@@ -100,18 +101,19 @@ const plans = ref<{
         calls_per_week: "You choose",
         agent: "Fully dedicated agents"
     }])
-const handleFetchPlans = async () => {
-    try {
-        const req = useAxios().get("/swQ1ic")
-        const res: any = await req
-        if (res.data) {
-            plans.value = res.data
-        }
-    } catch (err: any) {
-        console.log(err)
-    }
+    // API was not working
+// const handleFetchPlans = async () => {
+//     try {
+//         const req = useAxios().get("/swQ1ic")
+//         const res: any = await req
+//         if (res.data) {
+//             plans.value = res.data
+//         }
+//     } catch (err: any) {
+//         console.log(err)
+//     }
 
-}
+// }
 onMounted(() => {
     // API was not working
     // handleFetchPlans()
