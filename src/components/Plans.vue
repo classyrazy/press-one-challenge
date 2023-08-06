@@ -41,11 +41,24 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
+import useAxios from '../composables/useAxios';
+const plans = ref([])
+const handleFetchPlans = async() => {
+    try {
+            const req = useAxios().get("/swQ1ic")
+            const res = await req
+            if (res.data) {
+               plans.value = res.data
+            }
+        } catch (err: any) {
+            console.log(err) 
+        }
 
-const plans = ref(
-    [{ "id": 1, "name": "Starter Plan", "amount": "25000", "description": "For businesses with few customers", "cta": "Subscribe Here", "call_reception": "Receive calls only", "calls_per_week": "Less than 30 calls per week", "agent": "Shared agents" }, { "id": 2, "name": "Growth Plan", "amount": "50000", "description": "For growing businesses", "cta": "Subscribe Here", "call_reception": "Receive and make calls", "calls_per_week": "30 - 70 calls per week", "agent": "Semi-dedicated agents" }, { "id": 3, "name": "All Access", "amount": "Custom", "description": "For e-commerce and retail businesses", "cta": "Calculate Your Cost", "call_reception": "Receive and make calls", "calls_per_week": "You choose", "agent": "Fully dedicated agents" }]
-)
+}
+onMounted(() => {
+    handleFetchPlans()
+})
 
 </script>
 
