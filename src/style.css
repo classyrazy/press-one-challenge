@@ -333,6 +333,9 @@ section.benefit-section .inner {
   width: 90%;
   margin: 0 auto;
 }
+.each-benefit .details-wrapper .inner p {
+  padding-inline: 0.5rem;
+}
 }
 
 /* what you get section */
@@ -631,8 +634,12 @@ section.plans-section .inner h2 {
     grid-template-columns: repeat(1, minmax(0px, 1fr));
   }
   .plan-details .detail {
+    padding: 1rem 1.5rem;
     display: flex;
     width: 100%;
+  }
+  .plan-details .detail li {
+    padding: 0;
   }
 }
 
